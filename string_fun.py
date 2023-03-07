@@ -45,3 +45,24 @@ def replaceOldDomain(email, oldDomain, newDomain):
         new_email = email[:index] + '@' + newDomain
         return new_email
     return email
+
+# upper and lower class
+print("ahmad".upper())
+print("AHMAD".lower())
+
+# trim the surrounding spaces of string
+print(" more ".strip())
+print(" more".lstrip())
+print("more ".rstrip())
+
+# if string madeup of just numbers
+print("1234".isnumeric())
+print("1234aa".isnumeric())
+
+# to join strings
+print(" ".join(['ahmad','mujtaba','mahmood']))
+print("...".join(['ahmad','mujtaba','mahmood']))
+print("---".join(['ahmad','mujtaba','mahmood']))
+
+# to split strings
+print("I am Ahmad Mujtaba Mahmood".split())
