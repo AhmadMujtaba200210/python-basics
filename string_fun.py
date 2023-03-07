@@ -38,13 +38,14 @@ print("Chan" in example3)  # True
 
 
 # example of String practice
-# for example you are working in a company and it assign you to change the old domain with new domain
-def replaceOldDomain(email, oldDomain, newDomain):
+# for example you are working in a company, and it assigns you to change the old domain with new domain
+def replaceolddomain(email, oldDomain, newDomain):
     if '@' + oldDomain in email:
         index = email.index("@" + oldDomain)
         new_email = email[:index] + '@' + newDomain
         return new_email
     return email
+
 
 # upper and lower class
 print("ahmad".upper())
@@ -55,14 +56,29 @@ print(" more ".strip())
 print(" more".lstrip())
 print("more ".rstrip())
 
-# if string madeup of just numbers
+# if string made up of just numbers
 print("1234".isnumeric())
 print("1234aa".isnumeric())
 
 # to join strings
-print(" ".join(['ahmad','mujtaba','mahmood']))
-print("...".join(['ahmad','mujtaba','mahmood']))
-print("---".join(['ahmad','mujtaba','mahmood']))
+print(" ".join(['ahmad', 'mujtaba', 'mahmood']))
+print("...".join(['ahmad', 'mujtaba', 'mahmood']))
+print("---".join(['ahmad', 'mujtaba', 'mahmood']))
 
 # to split strings
 print("I am Ahmad Mujtaba Mahmood".split())
+
+# format method in String
+string = 'Ahmad Mujtaba'
+number = len(string) * 3
+print('Hi {}, your lucky number is {}'.format(string, number))
+
+print('Hi your cgpa is {:.2f}'.format(3.4))  # printing the float value upto 2 decimal point
+
+
+# example format function
+def to_celsius(x):
+    return (x - 32) * 5 / 9
+
+for x in range(0, 101, 10):
+    print("{} | {:.3f}".format(x, to_celsius(x)))
