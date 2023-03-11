@@ -82,3 +82,5 @@ def to_celsius(x):
 
 for x in range(0, 101, 10):
     print("{} | {:.3f}".format(x, to_celsius(x)))
+
+## Strings are immutable: they can't change

@@ -28,3 +28,17 @@ for home_team in teams:
     for away_team in teams:
         if home_team != away_team:
             print(home_team + " vs " + away_team)
+
+# example 5
+for x in [25]:
+    print(x)
+
+
+# example 6
+def greet(friends):
+    for friends in friends:
+        print("Hi! " + friends)
+
+
+greet(['ahmad', 'fasih', 'rashida', 'faiqa']) # will iterate on each string in a list
+greet("ahmad")  # will iterate on each letter of a string (here the function is considering the every letter as a member of a string)
