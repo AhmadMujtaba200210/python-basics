@@ -30,3 +30,19 @@ print(x.keys())
 # checking keys in dict
 print("bear" in x)
 print('lion' in x)
+
+
+# example codes
+def count_letters(text):
+    result = {}
+    for letter in text:
+        if letter not in result:
+            result[letter] = 0
+        result[letter] += 1
+    return result
+print(count_letters("aaaaaAhmmm"))
+
+
+wardrobe = {'shirt': ['red', 'blue', 'white'], 'jeans': ['blue', 'black']}
+new_items = {'jeans': ['white'], 'scarf': ['yellow'], 'socks': ['black', 'brown']}
+print(wardrobe.update(new_items))
